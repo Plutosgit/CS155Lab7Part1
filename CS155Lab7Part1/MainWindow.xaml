@@ -1,0 +1,18 @@
+﻿<Window x:Class="CS155Lab7Part1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS155Lab7Part1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lstOperator" HorizontalAlignment="Left" Height="35" Margin="275,135,0,0" VerticalAlignment="Top" Width="114" IsTabStop="True" TabIndex="2" SelectionChanged="lstOperator_SelectionChanged"/>
+        <TextBox x:Name="txtLeft" HorizontalAlignment="Left" Height="35" Margin="173,135,0,0" Text="Value" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" GotFocus="txtLeft_GotFocus" TabIndex="1" TextChanged="txtLeft_TextChanged"/>
+        <TextBox x:Name="txtRight" HorizontalAlignment="Left" Height="35" Margin="389,135,0,0" Text="Value" TextWrapping="Wrap" VerticalAlignment="Top" Width="103" RenderTransformOrigin="0.283,0.741" TextChanged="txtRight_TextChanged" GotFocus="txtRight_GotFocus" TabIndex="3"/>
+        <Label x:Name="lblAnswer" Content="Answer" HorizontalAlignment="Left" Height="35" Margin="526,135,0,0" VerticalAlignment="Top" Width="87"/>
+        <Label Content=" = " HorizontalAlignment="Left" Height="35" Margin="490,135,0,0" VerticalAlignment="Top" Width="42"/>
+        <Button x:Name="cmdAnswer" Content="Calculate" HorizontalAlignment="Left" Height="40" Margin="455,215,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" Click="cmdAnswer_OnClick" TabIndex="4"/>
+
+    </Grid>
+</Window>
